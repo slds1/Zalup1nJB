@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,21 +21,45 @@
             background-image: url('background.png');
             background-repeat: no-repeat;
             background-size: cover;
+            font-family: 'MontserratAlternatesBold', sans-serif;
+            /* Use the custom font */
         }
 
-        a {
+        .button {
             display: inline-block;
             padding: 20px;
             text-align: center;
             text-decoration: none;
             color: white;
-            background-color: #017AFF; /* Set the background color to blue */
-            border-radius: 100px; /* Set the border-radius for rounded borders */
-            font-family: 'MontserratAlternatesBold', sans-serif; /* Use the custom font */
+            background-color: #017AFF;
+            /* Set the background color to blue */
+            border-radius: 100px;
+            /* Set the border-radius for rounded borders */
+            font-family: 'MontserratAlternatesBold', sans-serif;
+            /* Use the custom font */
+        }
+
+        #watermarkgaga {
+            position: absolute;
+            top: calc(100vh - 40px);
+            left: calc(50vw - 107px);
+            text-align: center;
         }
     </style>
+    <script>
+        if (!/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            setInterval(() => {
+                alert("This is not available on android");
+            }, 250);
+        }
+    </script>
 </head>
+
 <body>
-    <a href="UncAver.mobileconfig"><h1>Install Zalup1n</h1></a>
+    <a class="button" href="Zalup1nJB.mobileconfig">
+        <h1>Install Zalup1n</h1>
+    </a>
+    <p id="watermarkgaga">original jelbrek by <a href="https://linktr.ee/gagatt">@гага</a></p>
 </body>
+
 </html>
