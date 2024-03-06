@@ -11,6 +11,12 @@
             src: url('montserrat-alternates-bold.ttf') format('truetype');
             /* Adjust the path based on the location of your font file */
         }
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
 
         body {
             display: flex;
@@ -18,7 +24,7 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-image: url('background.png');
+            background-image: url('lion.jpeg');
             background-repeat: no-repeat;
             background-size: cover;
             font-family: 'MontserratAlternatesBold', sans-serif;
@@ -33,7 +39,7 @@
             color: white;
             background-color: #017AFF;
             /* Set the background color to blue */
-            border-radius: 100px;
+            border-radius: 20px;
             /* Set the border-radius for rounded borders */
             font-family: 'MontserratAlternatesBold', sans-serif;
             /* Use the custom font */
@@ -49,7 +55,7 @@
     <script>
         if (!/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
             setInterval(() => {
-                alert("This is not available on android");
+                alert("Your device is not supported!");
             }, 250);
         }
     </script>
