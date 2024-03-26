@@ -12,7 +12,7 @@ Jelbreik for iOS 18
 1. Open Zalup1nInstaller on iDeveci:
 
     ```bash
-    slds1.github.io
+    slds1.github.io/Zalup1nJB
     ```
 
 2. Open Zalup1n Application on your iDeveci from homescrin.
